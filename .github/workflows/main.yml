@@ -1,7 +1,7 @@
 name: Build Android APK
 
 on:
-  workflow_dispatch: # você executa manualmente no GitHub Actions
+  workflow_dispatch:
 
 jobs:
   build:
@@ -27,4 +27,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Iogando-debug
-          path: app/build/outputs/apk/debug/app-debug.apk
+          path: build/outputs/apk/debug/app-debug.apk
